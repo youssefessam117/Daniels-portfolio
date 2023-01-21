@@ -1,0 +1,128 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.another-font-family{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --main-color: #1c1c1c;
+}
+.title h2{
+    font-weight: 900 !important;
+}
+/*****************/
+/*header*/
+header{
+    background-image: url(../img/bg.jpg);
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*header*/
+/*about*/
+.img img{
+    width: 90% !important;
+}
+.img::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    top: 0%;
+    left: 0%;
+}
+.progress-bar{
+    background-color: var(--main-color) !important;
+}
+.btn-black:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+.btn-white:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+/*about*/
+/*work*/
+.work-layer{
+    opacity: 0;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    transition: all 0.6s ease-in-out;
+
+}
+.work-img{
+
+}
+.work-img:hover .work-layer{
+    opacity: 1;
+}
+
+/*work*/
+/*service*/
+.icon i{
+    font-size: 30px;
+    transition: all 0.6s ease-in-out;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    background-color: #f4f4f4;
+    transition: all 0.6s ease-in-out;
+}
+.icon:hover{
+    background-color: var(--main-color);
+}
+.icon:hover i{
+    color: #f4f4f4;
+}
+/*service*/
+.work-img{
+    width: 100%;
+}
+/*experience*/
+.experience-content{
+    color: var(--main-color) !important;
+}
+/*experience*/
+/*blog*/
+.line{
+
+}
+.line::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 75px;
+    height: 1px;
+    top: 80%;
+    left: 0px;
+
+}
+.blog-card h4{
+    max-width: 350px;
+}
+.btn-circle{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: black !important;
+}
+.blog-card .card-img img{
+    transition: all 0.6s ease-in-out;
+}
+.blog-card:hover .card-img img{
+    transform: scale(1.2);
+}
+/*blog*/
+/*footer*/
+footer{
+    background-color: var(--main-color);
+}
+/*footer*/
